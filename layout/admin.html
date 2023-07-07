@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobZone</title>
+
+
+    <!-- Css Files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Font Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&display=swap"> <!-- Font Family -->
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/normalize.css"><!-- Normalize File -->
+    <link rel="stylesheet" href="css/main.css"> <!-- Main CSS File -->
+
+
+
+
+
+    
+</head>
+
+
+<body>
+
+
+    <!-- ==== Start Navigation Bar ==== -->
+    <nav class="navbar">
+        <div class="container">
+
+            
+            <h2 class="logo"><a href="index.html">موب<span>زون</span></a></h2>
+        
+            <ul class="menu">
+                <li ><a href="index.html"><i class="fa-solid fa-house-chimney"></i>الرئيسية</a></li>
+                <li><a href="news.html"><i class="fa-solid fa-newspaper"></i>الاخبار</a></li>
+                <li><a href="tips.html"><i class="fa-solid fa-lightbulb"></i>نصائح</a></li>
+            </ul>
+
+            
+            <div class="burger">
+                <span class=""></span>
+                <span class=""></span>
+                <span class=""></span>
+            </div> 
+        
+            
+            <a class="profile-button" href="user-profile.html">
+                <img src="img/user profile/man2.png" alt="">
+                <span>الملف الشخصي</span>
+            </a> 
+
+        </div>
+    </nav>
+    <!-- ==== End Navigation Bar ==== -->
+
+
+<!-- ==== Start Header ==== -->
+<header class="sec-header">
+    <div class="overlay"></div>
+    <div class="container">
+
+        <div class="info-box-holder">
+            <div class="info-box">
+                <h3>المستخدمين</h3>
+                <span class="count-up">345</span>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="info-box">
+                <h3>الهواتف</h3>
+                <span class="count-up">98</span>
+                <i class="fa-solid fa-mobile"></i>                
+            </div>
+
+          <div class="info-box">
+              <h3>المقالات</h3>
+              <span class="count-up">34</span>
+                <i class="fa-solid fa-newspaper"></i>
+            </div>
+
+            <div class="info-box">
+                <h3>التعليقات</h3>
+                <span class="count-up">5</span>
+                <i class="fa-solid fa-comments"></i>
+            </div>
+
+
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+<nav class="admin-tabs-nav">
+    <ul class="admin-tabs-list">
+        <li data-class="admin-tap-1" class="admin-active-tab">أضافة جديدة</li>
+        <li data-class="admin-tap-2">جداول البيانات</li>
+    </ul>
+</nav>
+
+<div class="admin-taps-content">
+
+    <div class="admin-tap-1 hide-big-div">
+
+        <ul class="tabs-list">
+            <li data-class="tap-1" class="active-tab">أضافة هاتف</li>
+            <li data-class="tap-2">أضافة خبر</li>
+            <li data-class="tap-3">أضافة نصيحة</li>
+        </ul>
+
+        <div class="taps-content">
+
+
+            <!-- Start Tap 1 -->
+            <div class="tap-1 hide-div">
+        
+                <!-- Start Add Mobile Form -->
+                <form action="" id="add-mobile" method="post" class="form-style">
+        
+        
+                    <h3 class="underline">أضافة هاتف جديد <span>&#43;</span></h3>
+        
+        
+                    <section class="input-holder"> 
+                        <label for="mobile-list">أختر الشركة</label>
+                        <br>
+                        <select name="mobile-list" id="mobile-list" >
+        
+                            <optgroup label="Android">
+                                <option value="oneplus">oneplus</option>
+                                <option value="xiaomi">xiaomi</option>
+                                <option value="oppo">oppo</option>
+                                <option value="samsung">samsung</option>
+                                <option value="huawei">huawei</option>
+                            </optgroup>
+                            
+                            <optgroup label="IOS">
+                                <option value="iphone">iphone</option>
+                            </optgroup>
+        
+                        </select>
+        
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="mob-name">أسم الهاتف</label>
+                        <br>
+                        <input type="text" name="mob-name" id="mob-name" >    
+                    </section>
+        
+                    
+                    <section class="input-holder"> 
+                        <label for="releas-date">تاريخ الاصدار</label>
+                        <br>
+                        <input type="date" name="" id="releas-date" >    
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="mob-system">نظام التشغيل</label>
+                        <br>
+                        <textarea id="mob-system" name="dwe" ></textarea> 
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="mob-network">الشبكات</label>
+                        <br>
+                        <textarea id="mob-network" ></textarea> 
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="mob-cpu">المعالج</label>
+                        <br>
+                        <textarea id="mob-cpu" ></textarea> 
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="mob-screen">الشاشة</label>
+                        <br>
+                        <textarea id="mob-screen" ></textarea> 
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="mob-ram">الذاكرة</label>
+                        <br>
+                        <textarea id="mob-ram" ></textarea> 
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="mob-storage">التخزين</label>
+                        <br>
+                        <textarea id="mob-storage" ></textarea> 
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="mob-battery">البطارية</label>
+                        <br>
+                        <textarea id="mob-battery" ></textarea> 
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="mob-material">خامات التصنيع	</label>
+                        <br>
+                        <textarea id="mob-material" ></textarea> 
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="mob-size">ابعاد الهاتف</label>
+                        <br>
+                        <textarea id="mob-size" ></textarea> 
+                    </section>
+                
+                    
+                
+                    <section class="input-holder"> 
+                        <label for="mob-camera">الكاميرا</label>
+                        <br>
+                        <textarea id="mob-camera" ></textarea> 
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="mob-audio">الصوت</label>
+                        <br>
+                        <textarea id="mob-audio" ></textarea> 
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="mob-mic">الميكروفون</label>
+                        <br>
+                        <textarea id="mob-mic" ></textarea> 
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="amazon-price">سعر امازون</label>
+                        <br>
+                        <input type="text" id="amazon-price" >
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="tradeline-price">سعر تريدلاين</label>
+                        <br>
+        
+                        <input type="text" id="tradeline-price" >
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="betech-price">سعر بي تك</label>
+                        <br>
+                        <input type="text" id="betech-price" >
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="">سعر جوميا</label>
+                        <br>
+                        <input type="text" required>
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="">صورة رئيسية</label>
+                        <br>
+                        <input type="file" required>
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="">صورة ثانية</label>
+                        <br>
+                        <input type="file" required>
+                    </section>
+        
+        
+                    <section class="input-holder"> 
+                        <label for="">صورة ثالثة</label>
+                        <br>
+                        <input type="file" required>
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="">صورة المحتويات</label>
+                        <br>
+                        <input type="file" required>
+                    </section>
+                    <section class="input-holder"> 
+                        <button type="submit">أضف</button>
+                    </section>
+        
+                </form>
+                <!-- End Add Mobile Form -->
+        
+            </div>
+            <!-- End Tap 1 -->
+        
+        
+            <!-- Start Tap 2 -->
+            <div class="tap-2 hide-div">
+        
+                <!-- Start Add News Form -->
+                <form action="" id="add-news" method="post" class="form-style">
+                    
+                    <h3 class="underline">أضافة خبر جديد <span>&#43;</span></h3>
+        
+                    <section class="input-holder"> 
+                        <label for="news-main-img">صورة رئيسية</label>
+                        <br>
+                        <input type="file" id="news-main-img" required>
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="news-title">عنوان الخبر</label>
+                        <br>
+                        <input type="text" id="news-title" name="" required>
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="news-author-name">اسم الكاتب</label>
+                        <br>
+                        <input type="text" id="news-author-name"  name="" required>
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="news-date">تاريخ  صدور الخبر</label>
+                        <br>
+                        <input type="date" id="news-date" name="" required>
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="first-news-para">قطعة نصية اولي</label>
+                        <br>
+                        <textarea id="first-news-para" ></textarea> 
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="news-sub-img">صوره فرعية</label>
+                        <br>
+                        <input type="file" id="news-sub-img">
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="news-sub-title">عنوان فرعي</label>
+                        <br>
+                        <input type="text" name="" id="news-sub-title">
+                    </section>
+        
+                    <section class="input-holder"> 
+                        <label for="news-third-para">قطعة نصية ثالثة</label>
+                        <br>
+                        <textarea id="news-third-para" ></textarea> 
+                    </section>
+                    
+                    
+                    <section class="input-holder"> 
+                        <label for="news-third-img">صوره فرعية ثالثة</label>
+                        <br>
+                        <input type="file" id="news-third-img">
+                    </section>
+        
+        
+                    <section class="input-holder"> 
+                        <label for="four-para">قطعة نصية رابعة</label>
+                        <br>
+                        <textarea id="four-para" ></textarea> 
+                    </section>
+                    
+                    <section class="input-holder"> 
+                        <button type="submit">أضف</button>
+                    </section>
+        
+        
+                </form>
+                <!-- End Add News Form -->
+        
+            </div>
+            <!-- Start Tap 2 -->
+        
+        
+            <!-- Start Tap 3 -->
+            <div class="tap-3 hide-div">
+            
+                <!-- Start Add Tips Form -->
+                <form action="" id="add-tips" method="post" class="form-style">
+        
+                    <h3 class="underline">أضافة نصائح جديدة <span>&#43;</span></h3>
+                
+                    <section class="input-holder"> 
+                        <label for="tips-main-img">صورة رئيسية</label>
+                        <br>
+                        <input type="file" id="tips-main-img" required>
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="tips-title">عنوان الخبر</label>
+                        <br>
+                        <input type="text" id="tips-title" name="" required>
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="tips-author-name">اسم الكاتب</label>
+                        <br>
+                        <input type="text" id="tips-author-name"  name="" required>
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="tips-date">تاريخ  صدور الخبر</label>
+                        <br>
+                        <input type="date" id="tips-date" name="" required>
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="first-tips-para">قطعة نصية اولي</label>
+                        <br>
+                        <textarea id="first-tips-para" ></textarea> 
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="tips-sub-img">صوره فرعية</label>
+                        <br>
+                        <input type="file" id="tips-sub-img">
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="tips-sub-title">عنوان فرعي</label>
+                        <br>
+                        <input type="text" name="" id="tips-sub-title">
+                    </section>
+                
+                    <section class="input-holder"> 
+                        <label for="tips-third-para">قطعة نصية ثالثة</label>
+                        <br>
+                        <textarea id="tips-third-para" ></textarea> 
+                    </section>
+                    
+                
+                    <section class="input-holder"> 
+                        <button type="submit">أضف</button>
+                    </section>
+                </form>
+                <!-- Start Add Tips Form -->
+        
+            </div>
+            <!-- End Tap 3 -->
+        
+        </div>
+        
+    </div>
+    
+    <div class="admin-tap-2 hide-big-div">
+        
+        <ul class="tabs-list ">
+            <li data-class="tap-1" class="active-tab">الهواتف</li>
+            <li data-class="tap-2">المقالات</li>
+            <li data-class="tap-3">المستخدمين</li>
+        </ul>
+
+        <div class="taps-content">
+
+            <!-- Start Tap 1 -->
+            <div class="tap-1 hide-div">
+
+            </div>
+            <!-- End Tap 1 -->
+        
+
+            <!-- Start Tap 2 -->
+            <div class="tap-2 hide-div">
+            </div>
+            <!-- Start Tap 2 -->
+        
+        
+            <!-- Start Tap 3 -->
+            <div class="tap-3 hide-div">
+            </div>
+            <!-- End Tap 3 -->
+
+        </div>
+    </div>
+
+</div>
+
+<!-- ==== End Header ==== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start Footer -->
+    <div class="first-footer">
+        <div class="container">
+            <div class="footer-box-holder">
+
+                <div class="about-box">
+                    <h2>من نحن</h2>
+                    <ul>
+                        <li>
+                            <p>موقع متخصص في تقديم المحتوي التقني الخاص بالهواتف.</p>
+                        </li>
+                            <li>
+                                <h3>نهدف الي</h3>
+                                <p>نشر المعرفة التي تمكن المستخدمين من الاستفادة الجيدة من الهواتف والتعرف اعلي مميزاتها.<br>
+                                ومساعدة المستخدمين من اختيار الهاتف المناسب لهم.
+                                </p>
+
+                                <p></p>
+                            </li>
+                
+                    </ul>
+                </div>
+
+                <div class="links-box">
+
+                    <h2>تصفح الموقع</h2>
+
+                    <ul class="links-box-ul">
+                        <li><a href="#">اخر المقالات</a></li>
+                        <li><a href="#">مقارانات الهواتف</a></li>
+                        <li><a href="#">الأشتراك</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">أحدث الهواتف</a></li>
+
+                    </ul>
+              
+                </div>
+                
+                <div class="icons-box">
+                    <h2>تابعنا</h2>
+                    <p>
+                        قم بمتابعتنا ليصلك كل جديد,<br>
+                        ولمعرفة اخر الاخبار التقنية.<br>
+                        <strong>1030450776&#40;20&#43;&#41;</strong>
+                    </p>
+            
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+          
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p> جميع الحقوق محفوظة الي موبزون &copy;</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Go To Top Button -->
+    <button class="gotop"><i class="fa-solid fa-angle-up"></i></button>
+
+
+    <!-- End Go To Top Button -->
+
+ 
+    <!-- JS Files -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/07bb446ef7.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
